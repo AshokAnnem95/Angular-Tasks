@@ -20,8 +20,12 @@ export class UserListComponent implements OnInit {
   { id: 2, Name: "Alex", Address: "Hyd", Designation: "QA" ,CreatedOn :"2020-08-15"},
   { id: 3, Name: "Test", Address: "pune", Designation: "BA" ,CreatedOn :"2020-09-15"},
   { id: 4, Name: "Sample", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
+
   { id: 4, Name: "Sample5", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
-  { id: 4, Name: "Sample6", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
+  { id: 4, Name: "Sample6", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
+
+  { id: 5, Name: "new Feature", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
+
   isFromEditMode: boolean = false;
   ButtonName: string;
   indexPosition: number;
