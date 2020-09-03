@@ -19,7 +19,8 @@ export class UserListComponent implements OnInit {
   { id: 1, Name: "John", Address: "Hyd", Designation: "Developer",CreatedOn :"2020-08-25" },
   { id: 2, Name: "Alex", Address: "Hyd", Designation: "QA" ,CreatedOn :"2020-08-15"},
   { id: 3, Name: "Test", Address: "pune", Designation: "BA" ,CreatedOn :"2020-09-15"},
-  { id: 4, Name: "Sample", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
+  { id: 4, Name: "Sample", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
+  { id: 5, Name: "new Feature", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
   isFromEditMode: boolean = false;
   ButtonName: string;
   indexPosition: number;
@@ -58,7 +59,7 @@ export class UserListComponent implements OnInit {
     //   this.event.target.checked = false;
     // }
     this.isChecked = false;
-    
+
     this.ButtonName = "Save";
     this.userPopupHeader = "Add User";
     $(".modal").modal("show");
@@ -74,10 +75,10 @@ export class UserListComponent implements OnInit {
       }
       this.users[this.indexPosition] = this.selectedUser;
       this.isFromEditMode = false;
-      
+
       this.isChecked = false;
       this.user = new User(0, "", "", "","");
-      
+
     }
     else {
       if(this.cardEdit != true){
@@ -100,7 +101,7 @@ export class UserListComponent implements OnInit {
   }
   DeleteUser() {
     this.users.splice(this.indexPosition, 1);
-    
+
     this.showButton = false;
     this.isChecked = false;
     this.selectedUser = new User(0,"","","","");
@@ -134,7 +135,7 @@ export class UserListComponent implements OnInit {
     console.log(this.fromDate +" "+this.toDate );
     this.fromDate =this.datepipe.transform(this.fromDate, 'yyyy-MM-dd');
     this.toDate = this.datepipe.transform(this.toDate, 'yyyy-MM-dd');
-    
+
     this.users =  this.users.filter(user => user.CreatedOn > this.fromDate && user.CreatedOn< this.toDate)
     this.fromDate = "";
     this.toDate = ""
@@ -160,7 +161,7 @@ export class UserListComponent implements OnInit {
   //   console.log(user);
   // }
   checkIfCardIsClicked(cardIndex: number) : boolean {
-    
+
     return cardIndex=== this.indexPosition;
   }
   HandleUser(event : User,index) {
