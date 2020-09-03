@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-xs-12">
+        
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="itemname">Item</label>
+                    <input type="text" class="form-control"[(ngModel)] = "shopping.GadgetName">
+                 </div>  
+                 <div class="col-sm-5 form-group">
+                  <label for="price">Price</label>
+                  <input type="number" class="form-control" [(ngModel)] = "shopping.GadgetPrice">
+                </div>   
+            </div>
+            <div class="row">
+                <button class="btn btn-success" (click)="addItem()">Add</button>&nbsp;
+                <button class="btn btn-success" (click)="EditItem()">Edit</button>&nbsp;
+                <!-- <button class="btn btn-danger">Delete</button> -->
+                <button class="btn btn-primary" (click)="ClearData()">Clear</button>
+
+            </div>   
+        
+    </div>
+</div>

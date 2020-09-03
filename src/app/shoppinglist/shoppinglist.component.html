@@ -1,0 +1,22 @@
+
+<!-- <div *ngIf="!paidFor">
+    <h1 appBetterHighlighter>Buy this Couch - Rupees{{ product.price }} OBO</h1>
+  </div>
+  
+  <div *ngIf=paidFor>
+    <h1>Yay, you bought a sweet couch!</h1>
+  </div>
+  <div #paypal></div> -->
+<div class="row">
+    <div class="col-xs-10">
+        <app-shopping-item (onItemAdded)="AddItem($event)"
+        ></app-shopping-item>
+    </div>
+    </div>
+    <hr>
+   <div class="row"> 
+    <ul class="list-group">
+        <app-shopping-item class="list-group-item" *ngFor="let item of ListOfItems" [selectedItem] = "item">
+            {{item.GadgetName}}({{item.GadgetPrice}})</app-shopping-item>
+    </ul>
+ </div>

@@ -1,0 +1,8 @@
+<app-header (LinkSelected)= "onClick($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <app-user-list *ngIf="LinkToNavigate ==='user'"></app-user-list>
+        <app-shoppinglist *ngIf="LinkToNavigate !=='user'"></app-shoppinglist>
+    </div>
+
+</div>
