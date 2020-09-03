@@ -146,6 +146,7 @@ export class UserListComponent implements OnInit {
     this.fromDate = "";
     this.toDate = ""
     console.log(this.users)
+    console.log("Submitted")
   }
   listView() {
     this.listButtonShow = false;
