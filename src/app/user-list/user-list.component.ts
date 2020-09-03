@@ -24,7 +24,8 @@ export class UserListComponent implements OnInit {
   { id: 4, Name: "Sample5", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
   { id: 4, Name: "Sample6", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
 
-  { id: 5, Name: "new Feature", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
+  { id: 5, Name: "new Feature", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"},
+  { id: 10, Name: "new Feature", Address: "Hyd", Designation: "BA" ,CreatedOn :"2020-09-15"}];
 
   isFromEditMode: boolean = false;
   ButtonName: string;
